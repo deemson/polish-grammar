@@ -1,0 +1,35 @@
+{
+  "name": "polish-grammar",
+  "version": "0.0.1",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deemson/polish-grammar.git"
+  },
+  "keywords": [],
+  "author": "Dmytro Kurkin",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/deemson/polish-grammar/issues"
+  },
+  "homepage": "https://github.com/deemson/polish-grammar#readme",
+  "description": "",
+  "devDependencies": {
+    "@astrojs/react": "^4.1.2",
+    "@types/react": "^19.0.3",
+    "@types/react-dom": "^19.0.2",
+    "astro": "^5.1.3"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "react": "^19.0.0",
+    "react-bootstrap": "^2.10.7",
+    "react-dom": "^19.0.0"
+  }
+}
