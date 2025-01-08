@@ -27,7 +27,8 @@ export type GrammaticalSingularGender = typeof grammaticalSingularGenders[number
 
 export const grammaticalPluralGenders = [
   'masculine',
-  'non-masculine'
+  'other'
 ] as const
 
 export type GrammaticalPluralGender = typeof grammaticalPluralGenders[number]
+export type GrammaticalGender = GrammaticalSingularGender | GrammaticalPluralGender
