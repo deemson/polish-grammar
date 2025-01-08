@@ -6,7 +6,7 @@ import {
   grammaticalSingularGenders,
   grammaticalPluralGenders,
   type GrammaticalSingularGender, type GrammaticalPluralGender, type GrammaticalNumber
-} from '../logic/concepts.ts'
+} from '../code/core-concepts.ts'
 
 const casesWithoutVocative = grammaticalCases.filter(grCase => grCase !== 'vocative')
 
