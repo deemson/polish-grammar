@@ -17,11 +17,8 @@ interface DeclensionTableBodyProps {
   declensionMap: DeclensionMap
 }
 
-interface Children {
-  children: string
-}
 
-type DeclensionTableProps = DeclensionTableBodyProps & Children
+type DeclensionTableProps = DeclensionTableBodyProps
 
 export const DeclensionTable: React.FunctionComponent<DeclensionTableProps> = ({ declensionMap }) => {
   return <table>

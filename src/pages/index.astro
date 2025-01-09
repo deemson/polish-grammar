@@ -1,14 +1,6 @@
 ---
-import Test from '../layouts/Test.astro'
-import { Content } from '../components/test.md'
-import { Some } from '../components/Some'
+import Test from '@/layouts/Test.astro'
 ---
 <Test>
-    <Some client:load>
-        <Fragment slot="sup">
-            <Content/>
-            <Content/>
-        </Fragment>
-    </Some>
     <a href="nouns/">Nouns</a>
 </Test>

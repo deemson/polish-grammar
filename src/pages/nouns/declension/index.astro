@@ -1,8 +1,7 @@
 ---
-import Test from '../../../layouts/Test.astro'
-import { DeclensionTable } from '../../../components/DeclensionTable'
-import { Content as NounDeclensionExplanations } from '../../../components/noun-declension.md'
-import { nounDeclensionMap } from '../../../code/declension'
+import Test from '@/layouts/Test.astro'
+import { DeclensionTable } from '@/components/DeclensionTable'
+import { nounDeclensionMap } from '@/code/declension'
 ---
 <Test>
     <DeclensionTable declensionMap={nounDeclensionMap} client:load/>
