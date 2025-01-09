@@ -3,12 +3,7 @@ import Test from '../../../layouts/Test.astro'
 import { DeclensionTable } from '../../../components/DeclensionTable'
 import { Content as NounDeclensionExplanations } from '../../../components/noun-declension.md'
 import { nounDeclensionMap } from '../../../code/declension'
-// import { type MarkdownInstance } from 'astro'
-// const nounDeclensionExplanations: MarkdownInstance<any>[] = Object.values(import.meta.glob('../../../components/noun-declension/*.md', { eager: true }))
-
 ---
 <Test>
-    <DeclensionTable declensionMap={nounDeclensionMap} client:load>
-        <NounDeclensionExplanations/>
-    </DeclensionTable>
+    <DeclensionTable declensionMap={nounDeclensionMap} client:load/>
 </Test>

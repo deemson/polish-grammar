@@ -1,18 +1,17 @@
-import React, { type ReactNode } from 'react'
-import { Table } from 'react-bootstrap'
+import React from 'react'
 import {
   grammaticalSingularGenders,
   grammaticalPluralGenders,
   grammaticalCases
-} from '../code/core-concepts.ts'
+} from '@/code/core-concepts.ts'
 import {
   grammaticalCaseShortTitles,
   grammaticalCaseTitles,
   grammaticalNumberTitles,
   grammaticalPluralGenderTitles,
   grammaticalSingularGenderTitles
-} from '../code/core-concepts-display.ts'
-import type { Declension, DeclensionMap } from '../code/declension.ts'
+} from '@/code/core-concepts-display.ts'
+import type { Declension, DeclensionMap } from '@/code/declension.ts'
 
 interface DeclensionTableBodyProps {
   declensionMap: DeclensionMap
@@ -24,15 +23,11 @@ interface Children {
 
 type DeclensionTableProps = DeclensionTableBodyProps & Children
 
-export const DeclensionTable: React.FunctionComponent<DeclensionTableProps> = ({ declensionMap, children }) => {
-  console.log(children)
-  return <React.Fragment>
-    <Table bordered>
-      <DeclensionTableHead/>
-      <DeclensionTableBody declensionMap={declensionMap}/>
-    </Table>
-    {JSON.parse(children)['one']}
-  </React.Fragment>
+export const DeclensionTable: React.FunctionComponent<DeclensionTableProps> = ({ declensionMap }) => {
+  return <table>
+    <DeclensionTableHead/>
+    <DeclensionTableBody declensionMap={declensionMap}/>
+  </table>
 }
 
 const DeclensionTableHead: React.FunctionComponent = () => {
